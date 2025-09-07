@@ -1,0 +1,622 @@
+---
+allow-lan: true
+dns:
+  default-nameserver:
+  - 119.29.29.29
+  - 223.5.5.5
+  - 114.114.114.114
+  enable: true
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - 114.114.114.114
+  - 119.29.29.29
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  use-hosts: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time-ios.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - "+.qq.com"
+  - "+.tencent.com"
+  - "+.srv.nintendo.net"
+  - "*.n.n.srv.nintendo.net"
+  - "+.cdn.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.*.microsoft.com
+  - "*.*.xboxlive.com"
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - na.b.g-tun.com
+  - "+.nflxvideo.net"
+  - "*.square-enix.com"
+  - "*.finalfantasyxiv.com"
+  - "*.ffxiv.com"
+  - "*.ff14.sdo.com"
+  - ff.dorado.sdo.com
+  - "*.mcdn.bilivideo.cn"
+  - "+.media.dssott.com"
+  - shark007.net
+  - Mijia Cloud
+  - "+.cmbchina.com"
+  - "+.cmbimg.com"
+  - local.adguard.org
+  - "+.sandai.net"
+  - "+.n0808.com"
+  - "+.uu.163.com"
+  - ps.res.netease.com
+  - "+.pub.3gppnetwork.org"
+  - geosite:category-games
+log-level: warning
+mixed-port: 7893
+mode: rule
+proxies:
+- name: "\U0001F1FA\U0001F1F8 美国西雅图"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: ced70ed3-t1x340-t3dj54-1sr3u.se.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1FA\U0001F1F8 美国西雅图2"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 90250c5a-t1x340-t3dj54-1sr3u.sv.plebai.net
+  tls: true
+  type: socks5
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1FA\U0001F1F8 美国洛杉矶2[CU]"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 15229
+  server: 1d597851-t1x340-t3dj54-1sr3u.cu.plebai.net
+  tls: true
+  type: trojan
+- name: "\U0001F1FA\U0001F1F8 美国硅谷"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 6ef56a01-t1x340-t3dj54-1sr3u.sj.gotochinatown.net
+  tls: true
+  type: socks5
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1FA\U0001F1F8 美国硅谷2"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 4c5a7446-t1x340-t3dj54-1sr3u.sj.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1FA\U0001F1F8 美国洛杉矶"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 3fabe400-t1x340-t3dj54-1sr3u.los.gotochinatown.net
+  tls: true
+  type: socks5
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1FA\U0001F1F8 美国洛杉矶2"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 3fabe400-t1x340-t3dj54-1sr3u.los.gotochinatown.net
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1ED\U0001F1F0香港中转[CM]"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 5228
+  server: 4bcd9d48-t1x340-t3dj54-1sr3u.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1ED\U0001F1F0香港精品4"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 1be3dd90-t1x340-t3dj54-1sr3u.hkt2.cdnhuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1ED\U0001F1F0香港精品3"
+  password: "<password>"
+  port: 8443
+  server: 979c3140-t1x340-t3dj54-1sr3u.hkt.cdnhuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1ED\U0001F1F0 香港精品"
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+      (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+  ws-path: "/"
+- name: "\U0001F1ED\U0001F1F0香港精品2"
+  password: "<password>"
+  port: 443
+  server: 1be3dd90-t1x340-t3dj54-1sr3u.hkt2.cdnhuawei.com
+  tls: true
+  type: socks5
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1ED\U0001F1F0 香港01"
+  network: ws
+  port: 80
+  server: c361b6ef-t1x340-t3dj54-1sr3u.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+      (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+  ws-path: "/"
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1ED\U0001F1F0 香港02"
+  network: ws
+  port: 80
+  server: 2d14904d-t1x340-t3dj54-1sr3u.hkt.tcpbbr.net
+  tls: false
+  type: vmess
+  uuid: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: "/"
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1ED\U0001F1F0 香港03"
+  network: ws
+  port: 80
+  server: d7dda373-t1x340-t3dj54-1sr3u.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+      (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+  ws-path: "/"
+- name: "\U0001F1EC\U0001F1E7 英国"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 7aac1b9f-t1x340-t3dj54-1sr3u.uk.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1EB\U0001F1F7 法国"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 8443
+  server: 89e4953c-t1x340-t3dj54-1sr3u.fr.cdnkuaishou.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1E9\U0001F1EA 德国"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 34fd19c9-t1x340-t3dj54-1sr3u.de.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1F2\U0001F1FE 马来西亚"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 31233
+  server: 387341b1-t1x340-t3dj54-1sr3u.my.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1F9\U0001F1ED 泰国"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 27235
+  server: ad0fdbcd-t1x340-t3dj54-1sr3u.cm5.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1F0\U0001F1F7韩國[CT]"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 31433
+  server: 12e6ec51-t1x340-t3dj54-1sr3u.kr.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1E8\U0001F1F3 台湾"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 9a0ab3a0-t1x340-t3dj54-1sr3u.tw3.p5pv.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1EF\U0001F1F5 日本"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: ca4f2656-t1x340-t3dj54-1sr3u.jp.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1EE\U0001F1E9 印尼[CT]"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 32233
+  server: e510baa3-t1x340-t3dj54-1sr3u.id.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1EF\U0001F1F5 日本[CT]"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 27233
+  server: ad0fdbcd-t1x340-t3dj54-1sr3u.cm5.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1EF\U0001F1F5 日本4"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 7e5ab111-t1x340-t3dj54-1sr3u.jp4.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1F8\U0001F1EC 新加坡[CT]"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 17235
+  server: ad0fdbcd-t1x340-t3dj54-1sr3u.cm5.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1F8\U0001F1EC 新加坡"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 8bc2c4c0-t1x340-t3dj54-1sr3u.sg.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- name: "\U0001F1F8\U0001F1EC 新加坡3"
+  password: e7e5335e-8574-11f0-af84-f23c913c8d2b
+  port: 443
+  server: 5e9d3c0c-t1x340-t3dj54-1sr3u.sg3.oshuawei.com
+  tls: true
+  type: http
+  username: e7e5335e-8574-11f0-af84-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: 线路少请更换软件看公告
+  network: tcp
+  port: 443
+  server: hostloc.com
+  tls: false
+  type: vmess
+  uuid: e7e5335e-8574-11f0-af84-f23c913c8d2b
+proxy-groups:
+- name: Ghelper
+  proxies:
+  - "\U0001F310 全球智能"
+  - "\U0001F1FA\U0001F1F8 美国西雅图"
+  - "\U0001F1FA\U0001F1F8 美国西雅图2"
+  - "\U0001F1FA\U0001F1F8 美国洛杉矶2[CU]"
+  - "\U0001F1FA\U0001F1F8 美国硅谷"
+  - "\U0001F1FA\U0001F1F8 美国硅谷2"
+  - "\U0001F1FA\U0001F1F8 美国洛杉矶"
+  - "\U0001F1FA\U0001F1F8 美国洛杉矶2"
+  - "\U0001F1ED\U0001F1F0 香港智能"
+  - "\U0001F1ED\U0001F1F0香港中转[CM]"
+  - "\U0001F1ED\U0001F1F0香港精品4"
+  - "\U0001F1ED\U0001F1F0香港精品3"
+  - "\U0001F1ED\U0001F1F0 香港精品"
+  - "\U0001F1ED\U0001F1F0香港精品2"
+  - "\U0001F1ED\U0001F1F0 香港01"
+  - "\U0001F1ED\U0001F1F0 香港02"
+  - "\U0001F1ED\U0001F1F0 香港03"
+  - "\U0001F1EC\U0001F1E7 英国"
+  - "\U0001F1EB\U0001F1F7 法国"
+  - "\U0001F1E9\U0001F1EA 德国"
+  - "\U0001F1F2\U0001F1FE 马来西亚"
+  - "\U0001F1F9\U0001F1ED 泰国"
+  - "\U0001F1F0\U0001F1F7韩國[CT]"
+  - "\U0001F1E8\U0001F1F3 台湾"
+  - "\U0001F1EF\U0001F1F5 日本"
+  - "\U0001F1EE\U0001F1E9 印尼[CT]"
+  - "\U0001F1EF\U0001F1F5 日本[CT]"
+  - "\U0001F1EF\U0001F1F5 日本4"
+  - "\U0001F1F8\U0001F1EC 新加坡[CT]"
+  - "\U0001F1F8\U0001F1EC 新加坡"
+  - "\U0001F1F8\U0001F1EC 新加坡3"
+  - AI专用
+  - 线路少请更换软件看公告
+  type: select
+- interval: 7200
+  name: "\U0001F310 全球智能"
+  proxies:
+  - "\U0001F1FA\U0001F1F8 美国西雅图"
+  - "\U0001F1FA\U0001F1F8 美国西雅图2"
+  - "\U0001F1FA\U0001F1F8 美国硅谷"
+  - "\U0001F1FA\U0001F1F8 美国硅谷2"
+  - "\U0001F1FA\U0001F1F8 美国洛杉矶"
+  - "\U0001F1FA\U0001F1F8 美国洛杉矶2"
+  - "\U0001F1ED\U0001F1F0 香港智能"
+  - "\U0001F1ED\U0001F1F0香港中转[CM]"
+  - "\U0001F1ED\U0001F1F0香港精品4"
+  - "\U0001F1ED\U0001F1F0香港精品3"
+  - "\U0001F1ED\U0001F1F0 香港精品"
+  - "\U0001F1ED\U0001F1F0香港精品2"
+  - "\U0001F1ED\U0001F1F0 香港01"
+  - "\U0001F1ED\U0001F1F0 香港02"
+  - "\U0001F1ED\U0001F1F0 香港03"
+  - "\U0001F1EC\U0001F1E7 英国"
+  - "\U0001F1EB\U0001F1F7 法国"
+  - "\U0001F1EF\U0001F1F5 日本"
+  - "\U0001F1EF\U0001F1F5 日本4"
+  - "\U0001F1F8\U0001F1EC 新加坡"
+  - "\U0001F1F8\U0001F1EC 新加坡3"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+- interval: 7200
+  name: "\U0001F1ED\U0001F1F0 香港智能"
+  proxies:
+  - "\U0001F1ED\U0001F1F0香港中转[CM]"
+  - "\U0001F1ED\U0001F1F0香港精品4"
+  - "\U0001F1ED\U0001F1F0香港精品3"
+  - "\U0001F1ED\U0001F1F0 香港精品"
+  - "\U0001F1ED\U0001F1F0香港精品2"
+  - "\U0001F1ED\U0001F1F0 香港01"
+  - "\U0001F1ED\U0001F1F0 香港02"
+  - "\U0001F1ED\U0001F1F0 香港03"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+- interval: 7200
+  name: AI专用
+  proxies:
+  - "\U0001F1FA\U0001F1F8 美国西雅图"
+  - "\U0001F1FA\U0001F1F8 美国西雅图2"
+  - "\U0001F1FA\U0001F1F8 美国洛杉矶2[CU]"
+  - "\U0001F1FA\U0001F1F8 美国硅谷"
+  - "\U0001F1FA\U0001F1F8 美国硅谷2"
+  - "\U0001F1FA\U0001F1F8 美国洛杉矶"
+  - "\U0001F1FA\U0001F1F8 美国洛杉矶2"
+  - "\U0001F1EC\U0001F1E7 英国"
+  - "\U0001F1EB\U0001F1F7 法国"
+  - "\U0001F1EF\U0001F1F5 日本"
+  - "\U0001F1EF\U0001F1F5 日本[CT]"
+  - "\U0001F1EF\U0001F1F5 日本4"
+  - "\U0001F1F8\U0001F1EC 新加坡[CT]"
+  - "\U0001F1F8\U0001F1EC 新加坡"
+  - "\U0001F1F8\U0001F1EC 新加坡3"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+rules:
+- SRC-IP-CIDR,192.168.1.179/32,DIRECT
+- DOMAIN-SUFFIX,ip-api.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,ip138.com,DIRECT
+- DOMAIN-SUFFIX,skype.com,DIRECT
+- DOMAIN-SUFFIX,skype.comedge.skype.net,DIRECT
+- DOMAIN-SUFFIX,skypeassets.com,DIRECT
+- DOMAIN-SUFFIX,skypeforbusiness.com,DIRECT
+- DOMAIN-SUFFIX,paypal.com,DIRECT
+- DOMAIN-SUFFIX,alipay.com,DIRECT
+- DOMAIN-SUFFIX,airwallex.com,DIRECT
+- DOMAIN-SUFFIX,stripe.com,DIRECT
+- DOMAIN-SUFFIX,wooshpay.com,DIRECT
+- DOMAIN-SUFFIX,payssion.com,DIRECT
+- DOMAIN-SUFFIX,chrapi.com,DIRECT
+- DOMAIN-SUFFIX,firapi.com,DIRECT
+- DOMAIN-SUFFIX,gheapi.com,DIRECT
+- DOMAIN-SUFFIX,broapi.com,DIRECT
+- DOMAIN-SUFFIX,edgapi.com,DIRECT
+- DOMAIN-SUFFIX,browserapi.net,DIRECT
+- DOMAIN-SUFFIX,cnsync.com,DIRECT
+- DOMAIN-SUFFIX,on1t.com,DIRECT
+- DOMAIN-SUFFIX,chromeapi.net,DIRECT
+- DOMAIN-SUFFIX,copydesign.net,DIRECT
+- DOMAIN-SUFFIX,jy3p.com,DIRECT
+- DOMAIN-SUFFIX,p5pv.com,DIRECT
+- DOMAIN-SUFFIX,z7zi.com,DIRECT
+- DOMAIN-SUFFIX,j2ai.com,DIRECT
+- DOMAIN-SUFFIX,alrihla.net,DIRECT
+- DOMAIN-SUFFIX,sphinxsearch.net,DIRECT
+- DOMAIN-SUFFIX,cdnhuawei.com,DIRECT
+- DOMAIN-SUFFIX,cdnkuaishou.com,DIRECT
+- DOMAIN-KEYWORD,google,Ghelper
+- DOMAIN-SUFFIX,ggpht.com,Ghelper
+- DOMAIN-SUFFIX,gmail.com,Ghelper
+- DOMAIN-SUFFIX,gvt2.com,Ghelper
+- DOMAIN-SUFFIX,gvt3.com,Ghelper
+- DOMAIN-SUFFIX,chrome.com,Ghelper
+- DOMAIN-SUFFIX,wikipedia.org,Ghelper
+- DOMAIN-SUFFIX,wikimedia.org,Ghelper
+- DOMAIN-SUFFIX,appspot.com,Ghelper
+- DOMAIN-SUFFIX,android.com,Ghelper
+- DOMAIN-SUFFIX,github.com,Ghelper
+- DOMAIN-SUFFIX,gitbook.com,Ghelper
+- DOMAIN-SUFFIX,kaggle.com,Ghelper
+- DOMAIN-SUFFIX,arxiv.org,Ghelper
+- DOMAIN-SUFFIX,wiktionary.org,Ghelper
+- DOMAIN-SUFFIX,blogger.com,Ghelper
+- DOMAIN-KEYWORD,youtube,Ghelper
+- DOMAIN-SUFFIX,youtu.be,Ghelper
+- DOMAIN-SUFFIX,ytimg.com,Ghelper
+- DOMAIN-SUFFIX,youtube.com,Ghelper
+- DOMAIN-SUFFIX,instagram.com,Ghelper
+- DOMAIN-SUFFIX,twitter.com,Ghelper
+- DOMAIN-SUFFIX,t.co,Ghelper
+- DOMAIN-SUFFIX,facebook.com,Ghelper
+- DOMAIN-SUFFIX,telegram.org,Ghelper
+- DOMAIN-SUFFIX,whatsapp.com,Ghelper
+- DOMAIN-SUFFIX,whatsapp.net,Ghelper
+- DOMAIN-SUFFIX,linkedin.com,Ghelper
+- DOMAIN-SUFFIX,licdn.com,Ghelper
+- DOMAIN-SUFFIX,trkn.us,Ghelper
+- DOMAIN-SUFFIX,cedexis.com,Ghelper
+- DOMAIN-SUFFIX,ip.sb,Ghelper
+- DOMAIN-SUFFIX,ip.net,Ghelper
+- DOMAIN-SUFFIX,openai.com,Ghelper
+- DOMAIN-SUFFIX,auth0.com,Ghelper
+- DOMAIN-SUFFIX,featuregates.org,Ghelper
+- DOMAIN-SUFFIX,statsigapi.net,Ghelper
+- DOMAIN-SUFFIX,intercom.io,Ghelper
+- DOMAIN-SUFFIX,intercomcdn.com,Ghelper
+- DOMAIN-SUFFIX,sentry.io,Ghelper
+- DOMAIN-SUFFIX,sentry.dev,Ghelper
+- DOMAIN-SUFFIX,oaistatic.com,Ghelper
+- DOMAIN-SUFFIX,oaiusercontent.com,Ghelper
+- DOMAIN-SUFFIX,chatgpt.com,Ghelper
+- DOMAIN-SUFFIX,chatgpt-async-webps-prod-southcentralus-6.webpubsub.azure.com,Ghelper
+- DOMAIN-SUFFIX,claude.ai,Ghelper
+- DOMAIN-SUFFIX,anthropic.com,Ghelper
+- DOMAIN-SUFFIX,bing.com,Ghelper
+- DOMAIN-SUFFIX,microsoftonline.com,Ghelper
+- DOMAIN-SUFFIX,live.com,Ghelper
+- DOMAIN-SUFFIX,msecnd.net,Ghelper
+- DOMAIN-SUFFIX,msn.com,Ghelper
+- DOMAIN-SUFFIX,bingapis.com,Ghelper
+- DOMAIN-SUFFIX,bing.net,Ghelper
+- DOMAIN-SUFFIX,windows.com,Ghelper
+- DOMAIN-SUFFIX,microsoft.com,Ghelper
+- GEOIP,CN,DIRECT
+- MATCH, Ghelper
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+external-controller: 0.0.0.0:9090
+secret: '123456'
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+external-ui-name: metacubexd
+keep-alive-interval: 15
+keep-alive-idle: 600
+ipv6: false
+geodata-loader: standard
+tcp-concurrent: true
+geox-url:
+  mmdb: https://testingcf.jsdelivr.net/gh/alecthw/mmdb_china_ip_list@release/lite/Country.mmdb
+  geoip: https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+  asn: https://testingcf.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb
+sniffer:
+  enable: true
+  override-destination: true
+  sniff:
+    QUIC:
+      ports:
+      - 443
+    TLS:
+      ports:
+      - 443
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+  force-domain:
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  skip-domain:
+  - "+.apple.com"
+  - Mijia Cloud
+  - dlg.io.mi.com
+  - "+.oray.com"
+  - "+.sunlogin.net"
+  - "+.push.apple.com"
+  parse-pure-ip: true
+tun:
+  enable: true
+  stack: mixed
+  device: utun
+  dns-hijack:
+  - 127.0.0.1:53
+  endpoint-independent-nat: true
+  auto-route: false
+  auto-detect-interface: false
+  auto-redirect: false
+  strict-route: false
+profile:
+  store-selected: true
+  store-fake-ip: true
